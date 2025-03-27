@@ -1,0 +1,121 @@
+:root{
+    ---Red: rgba(199, 59, 15, 1);
+    ---Dark: rgba(38, 15, 8, 1);
+    ---Brown: rgba(135, 99, 90, 1);
+    ---White: rgba(255, 255, 255, 1);
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Red Hat Text";
+}
+
+
+.container {
+    display: flex;
+    width: 100%;
+    padding: 88px 112px;
+    position: relative;
+}
+
+
+.desserts {
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    max-width: 1000px;
+    width: 100%;
+
+}   
+
+.title {
+    font-size:  40px;
+    font-weight: 700;
+    line-height: 120%; /* 48px */
+
+}
+
+.desserts-lict {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.dessert-item {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.dessert-img {
+    height: 240px;
+    border-radius: 8px;
+
+}
+
+.dessert-btn {
+    padding: 12px;
+    background-color: var(---White);
+    border: 1px solid  var(---Brown); 
+    border-radius: 50px; 
+    color: var(---Dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    transform: translateY(-25px);
+    width: max-content;
+    margin: auto;
+}
+
+.dessert-categoriya {
+    color: var(---Brown);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.dessert-name {
+    color: var(---Dark);
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.dessert-cost {
+    color: var(---Red);
+    font-size: 16px;
+    font-weight: 600;
+    
+}
+
+.dessert-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.cart {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top:  10%;
+    right: 10%;
+}
+
+.cart-img {
+    width: 128px;
+    height: 128px;
+    
+}
+
+.cart-title {
+    color: var(---Red);
+    text-align: left;
+}
+
+.cart-empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
